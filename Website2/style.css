@@ -1,0 +1,326 @@
+
+/* Global styling */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto';
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    padding: 20px;
+    background-color: #346548;
+    color: white;
+    border: none;
+    font-family: 'Roboto';
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+/* Button Hover Css Transitions */
+button:hover {
+    background-color: #668A4A;
+    padding: 25px;
+}
+
+img {
+    width: 300px;
+}
+
+/**************************************************** Header ********************************************************/
+
+.navbar {
+    background-color: #29472B;
+    height: 50px;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+}
+
+.navbar ul {
+    list-style-type: none;
+
+}
+
+li {
+    float: left;
+    margin-left: 100px;
+}
+
+a {
+    color: #FEE893;
+    text-decoration: none;
+}
+
+
+
+
+/***************************************************** Landing page section *************************************************/
+
+.landing-grid {
+    padding: 200px;
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #29472B;
+    color: #FEE893;
+}
+
+/* Left content */
+.landing-grid .left-box {
+    width: 400px;
+}
+
+.landing-grid .left-box h1 {
+    font-size: 40px;
+}
+
+/* Right Content SVG */
+
+.landing-grid .right-box {
+    text-align: center;
+}
+
+.leaf {
+    width: 100%;
+    animation-name: leaf-grow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes leaf-grow {
+    from {width: 100%;}
+    to {width: 70%;}
+}
+
+/************************************************** About Section *********************************************** */
+
+.about-grid {
+    padding: 200px;
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #FEE893;
+    color: #29472B;
+}
+
+.about-grid .left-box {
+    padding: 20px;
+    
+}
+
+.about-grid .left-box img {
+    width: 700px;
+}
+
+.about-grid .right-box {
+    padding: 20px;
+    color: black;
+}
+
+.about-grid .right-box p{
+    color: black;
+}
+
+
+/*********************************************** Charity section  ***********************************************/
+
+.header {
+    padding-left: 200px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.charities-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 200px;
+    padding-top: 0px;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+}
+
+.charity-grid .left-box p {
+    color: black;
+}
+
+.charity-header {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.charities-grid img {
+    width: 100%;
+}
+
+
+
+
+/************************************************* Learn Section **************************************************/
+
+.learn-grid {
+    padding: 200px 200px 200px 200px;
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #29472B;
+    color: #FEE893;
+}
+
+.learn-grid .left-box {
+    padding: 20px;
+    
+}
+
+.learn-grid .right-box {
+    padding: 20px;
+}
+
+.learn-grid .left-box li, p {
+    color: white;
+    line-height: 40px;
+}
+
+/************************************************** Slideshow ******************************************/
+
+.slideshow-container {
+    padding: 200px;
+    padding-top: 0px;
+}
+
+.slideshow-container .slidehsow img {
+    width: 1000px;
+}
+
+.slideshow-image {
+    width: 100%;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+
+    top: 5%;
+    position: relative;
+  }
+
+/************************************************** Footer *********************************************/
+.footer {
+    background-color: #FEE893;
+}
+
+.footer p {
+    color: black;
+    text-align: center;
+}
+
+
+
+/************************************************** Mobile Displays **********************************************/
+/*****************************************************************************************************************/
+
+@media only screen and (max-width: 700px) {
+    
+    /********************************************** Landing page section ******************************************/
+
+    .landing-grid {
+        grid-template-columns: auto;
+        padding: 20px;
+    }
+
+    /* Landing Grid Left Content  */
+
+    .landing-grid .left-box {
+        width: auto;
+    }
+
+    /* Landing grid Right Content */
+
+    .landing-grid .right-box {
+        text-align: center;
+    }
+
+    svg {
+        width: 300px;
+    }
+
+    /************************************************* About page section *********************************************** */
+
+    .about-grid {
+        grid-template-columns: auto;
+        padding: 20px;
+    }
+
+    .about-grid .left-box {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .about-grid .left-box img {
+        width: 100%;
+    }
+
+     /* Landing Grid Left Content  */
+
+    /********************************************** Charities Grid **************************************************/
+
+    .header {
+        padding: 20px;
+    }
+
+    .charities-grid {
+        grid-template-columns: auto;
+        padding: 20px;
+    }
+
+    /*************************************************Learn grid ***************************************************/
+
+    .learn-grid {
+        grid-template-columns: auto;
+        padding: 20px;
+        
+    }
+
+     /************************************************ Slideshow *************************************************** */
+
+     .slideshow-container {
+         padding: 20px;
+     }
+}
+
+   
+
+    
+
+/************************************************* Tablet screen ****************************************************/
+
+@media only screen and (max-width:1000px) {
+    
+    .about-grid {
+        grid-template-columns: auto;
+        padding: 20px;
+    }
+
+
+    svg {
+        width: 220px;
+    }
+
+    /************************************************ Slideshow *************************************************** */
+
+    .slideshow-container {
+        padding: 20px;
+    }
+    
+}
+
